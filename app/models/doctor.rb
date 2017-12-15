@@ -3,6 +3,6 @@ class Doctor < ActiveRecord::Base
   has_many :patients, through: :appointments
 
   def doctor_name
-    self.doctor.name
+    self.name
   end
 end
