@@ -1,2 +1,7 @@
-<h1>Patients#show</h1>
-<p>Find me in app/views/patients/show.html.erb</p>
+<h1><%= @patient.name %></h1>
+
+<ul>
+  <% @patient.appointments.each do |appt| %>
+    <li><%= appt.human_time %> - <%= link_to appt.doctor, doctor_path(appt.doctor) %></li>
+  <% end %>
+</ul>
