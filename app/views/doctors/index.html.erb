@@ -2,4 +2,5 @@
 <ul>
 <% @doctors.each do |doctor| %>
   <li><%= link_do doctor.name, doctor_path(doctor.name) %></li>
+<% end %>
 </ul>
