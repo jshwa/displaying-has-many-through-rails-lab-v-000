@@ -5,6 +5,5 @@ class DoctorsController < ApplicationController
 
   def show
     @doctor = Doctor.find_by(name: params[:id])
-    raise @doctor.inspect
   end
 end
