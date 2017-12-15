@@ -3,6 +3,6 @@ class Appointment < ActiveRecord::Base
   belongs_to :patient
 
   def human_time
-    self.appointment_datetime.strftime("%B %d, %Y at %I:%M")
+    self.appointment_datetime.strftime("%B %d, %Y at %i:%M")
   end
 end
